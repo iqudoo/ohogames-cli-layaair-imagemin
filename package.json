@@ -1,0 +1,36 @@
+{
+  "name": "ohogames-cli-layaair-imagemin",
+  "version": "0.0.1",
+  "description": "ohogames-cli-layaair imagemin plugin",
+  "main": "",
+  "scripts": {
+    "test": "echo 'no tests'",
+    "preversion": "npm test",
+    "version": "git add -A plugin.js",
+    "postversion": "echo 'no postversion'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iqudoo/ohogames-cli-layaair-imagemin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iqudoo/ohogames-cli-layaair-imagemin/issues"
+  },
+  "homepage": "https://github.com/iqudoo/ohogames-cli-layaair-imagemin#readme",
+  "keywords": [
+    "ohogames",
+    "ohogames-cli",
+    "ohogames-cli-layaair",
+    "ohogames-cli-layaair-imagemin"
+  ],
+  "files": [
+    "plugin.js"
+  ],
+  "dependencies": {
+    "gulp": "4.0.0",
+    "gulp-imagemin": "8.0.0",
+    "imagemin-pngquant": "9.0.2"
+  }
+}
