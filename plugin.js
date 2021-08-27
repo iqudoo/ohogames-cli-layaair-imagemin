@@ -1,5 +1,3 @@
-
-const pngquant = require('imagemin-pngquant');
 const gulpImagemin = require('gulp-imagemin');
 const gulp = require('gulp');
 
@@ -12,7 +10,6 @@ function plugin(program) {
                 interlaced: program['imagemin-interlaced'] || true, //类型：Boolean 默认：false 隔行扫描gif进行渲染
                 multipass: program['imagemin-multipass'] || true, //类型：Boolean 默认：false 多次优化svg直到完全优化
                 svgoPlugins: [{ removeViewBox: false }],//不要移除svg的viewbox属性
-                use: [pngquant()] //使用pngquant深度压缩png图片的imagemin插件
             }))
             .pipe(gulp.dest(program.output));
     }
